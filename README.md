@@ -21,6 +21,7 @@ Developed by: somalarajurohini
 RegisterNumber:  24000337
 */
 ```
+```
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier,plot_tree
 data=pd.read_csv("/content/Employee.csv")
@@ -48,13 +49,14 @@ dt.predict([[0.5,0.8,9,260,6,0,1,2]])
 plt.figure(figsize=(8,6))
 plot_tree(dt,feature_names=x.columns,class_names=['salary','left'],filled=True)
 plt.show()
+```
 ## Output:
 ![decision tree classifier model](sam.png)
 
 
 ![Screenshot 2024-11-29 084024](https://github.com/user-attachments/assets/534ab7eb-ea50-405a-b5db-cd81acd07f1c)
 
-
+```
 data.info():
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 14999 entries, 0 to 14998
@@ -105,6 +107,7 @@ Accuracy value:
 0.964
 
 array([0],  dtype=int64)
+```
 
 
 
